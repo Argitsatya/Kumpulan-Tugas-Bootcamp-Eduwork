@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TUGAS 4</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <img src="assets/images/logo.jpg" alt="Logo" class="nav-logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#portofolio">Portofolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#SoftSkills">Soft skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- home -->
+    <section>
+      <div class="container">
+        <div id="home">
+          <div class="row align-items-center gy-4">
+            <div class="col-md-6">
+              <h5 class="fw-bold">Hei, Saya</h5>
+              <h4 style="color: tomato; font-weight: 600">Adi Febrianto</h4>
+              <p>
+                Selamat datang di halaman profil saya, saya suka sekali belajar
+                tentang web developer
+              </p>
+              <h3 class="text-gradient-2">WEB</h3>
+              <br />
+              <h3 class="text-gradient" style="margin-left: 10%">DEVELOPER</h3>
+              <div>
+                <button
+                  href="#"
+                  class="btn btn-primary mt-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#hireMeModal"
+                >
+                  Hire me
+                </button>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex justify-content-center mb-2">
+                <img
+                  class="poto-profil"
+                  src="assets/images/foto profil.jpeg"
+                  alt="Foto profil Adi Febrianto"
+                  class="img-fluid profile-img shadow-sm"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end home -->
+    <!-- about me -->
+    <section>
+      <h2 class="title text-center about" id="about" style="color: #f8fafc;">About me</h2>
+      <div
+        class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4"
+        style="margin: 0 auto; padding: 0 auto; max-width: 1000px"
+      >
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0 text-center py-4">
+            <div class="card-body">
+              <h5 class="card-title">Nama Lengkap</h5>
+              <p class="card-text text-muted">Adi Febrianto</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0 text-center py-4">
+            <div class="card-body">
+              <h5 class="card-title">Tempat, Tanggal Lahir</h5>
+              <p class="card-text text-muted">Bekasi, 15 Februari 2003</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0 text-center py-4">
+            <div class="card-body">
+              <h5 class="card-title">Pendidikan</h5>
+              <p class="card-text text-muted">S1 Teknik Informatika</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0 text-center py-4">
+            <div class="card-body">
+              <h5 class="card-title">Pekerjaan</h5>
+              <p class="card-text text-muted">Masih mencari</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0 text-center py-4">
+            <div class="card-body">
+              <h5 class="card-title">Hobi</h5>
+              <p class="card-text text-muted">
+                Membaca, dan mempelajari lebih dalam dunia programmer
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0 text-center py-4">
+            <div class="card-body">
+              <h5 class="card-title">Kontak</h5>
+              <p class="card-text text-muted">contoh@contoh.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end about me-->
+    <!-- skill -->
+    <section id="SoftSkills" class="bg-light py-5">
+      <div class="container">
+        <h2 class="title text-center mb-4 SoftSkills">Soft skills</h2>
+        <div class="row align-items-center gy-4">
+          <div class="col-4">
+            <img
+              class="poto-profil"
+              src="assets/images/foto profil.jpeg "
+              alt="About Me"
+              class="img-fluid rounded shadow-sm"
+            />
+          </div>
+          <div class="col-8">
+            <p style="color: #0f172a">
+              Saya adalah seorang web developer yang bersemangat dengan
+              pengalaman dalam membangun aplikasi web yang responsif dan
+              user-friendly. Saya memiliki keahlian dalam HTML, CSS, JavaScript,
+              dan berbagai framework seperti React dan Bootstrap. Saya selalu
+              berusaha untuk terus belajar dan mengikuti perkembangan terbaru
+              dalam dunia web development.
+            </p>
+            <div>
+              <h6 style="color: #0f172a">HTML</h6>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Success example"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="height: 20px"
+              >
+                <div
+                  class="progress-bar"
+                  style="width: 90%; background-color: tomato"
+                >
+                  90%
+                </div>
+              </div>
+            </div>
+            <div class="mt-2">
+              <h6 style="color: #0f172a">CSS</h6>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Success example"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="height: 20px"
+              >
+                <div
+                  class="progress-bar"
+                  style="width: 80%; background-color: tomato"
+                >
+                  80%
+                </div>
+              </div>
+            </div>
+            <div class="mt-2">
+              <h6 style="color: #0f172a">JavaScript</h6>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Success example"
+                aria-valuenow="60"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="height: 20px"
+              >
+                <div
+                  class="progress-bar"
+                  style="width: 60%; background-color: tomato"
+                >
+                  60%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end skill -->
+    <!-- service -->
+    <section id="service">
+      <div class="container" style="max-width: 800px">
+        <div class="row">
+          <div class="col-12 align-items-center gy-4 mb-8 mt-3">
+            <div style="max-width: 800px" class="m-auto">
+              <h2 class="title text-center service" style="color: #f8fafc">
+                My Service
+              </h2>
+              <p style="color: #f8fafc">
+                Saya menawarkan layanan pengembangan web yang mencakup pembuatan
+                situs web responsif, aplikasi web, dan solusi e-commerce. Dengan
+                keahlian dalam berbagai teknologi web, saya dapat membantu Anda
+                membangun kehadiran online yang kuat dan menarik. Saya
+                berkomitmen untuk memberikan hasil yang berkualitas tinggi dan
+                memenuhi kebutuhan spesifik Anda.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" style="gap: 10px">
+            <div class="service-card">
+              <img src="assets/images/html.png" class="img-fluid" alt="icon" />
+              <h5 class="mt-2 fw-800" style="color: #0f172a">HTML</h5>
+              <p style=" color:#0f172a;">
+                Sebagai web developer tentu nya saya sangat memahami HTML
+                sebagai pondasi utama dalam membuat sebuah website.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" style="gap: 10px">
+            <div class="service-card">
+              <img
+                src="assets/images/css.png"
+                class="img-fluid"
+                alt="icon"
+                style="width: 80px; height: 80px"
+              />
+              <h5 class="mt-2 fw-800" style="color: #0f172a">CSS</h5>
+              <p style="color: #0f172a">
+                Sebagai web developer tentu nya saya sangat memahami CSS sebagai
+                alat untuk membuat tampilan website yang menarik dan responsif.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" style="gap: 10px">
+            <div class="service-card">
+              <img
+                src="assets/images/js.png"
+                class="img-fluid"
+                alt="javascript icon"
+              />
+              <h5 class="mt-2 fw-800" style="color: #0f172a">JavaScript</h5>
+              <p style="color: #0f172a">
+                Sebagai web developer tentu nya saya sangat memahami JavaScript
+                sebagai bahasa pemrograman utama untuk membuat interaksi dinamis
+                di website.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end service -->
+    <!-- portofolio -->
+    <section id="portofolio">
+      <div class="container" style="max-width: 800px">
+        <div class="row">
+          <div class="col-12 text-center mb-3">
+            <div style="max-width: 700px" class="m-auto">
+              <h2 class="title section-title portofolio" style="color: #f8fafc;">Portofolio</h2>
+              <p>
+                Berikut adalah project-project web yang saya buat dengan bantuan
+                AI
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <img
+              src="assets/images/project1.png"
+              alt="Project Image"
+              class="img-fluid rounded mb-3"
+            />
+            <h5>
+              Project 1 adalah program membuat cetak foto, agar mempermudah
+              dalam mencetak foto
+            </h5>
+          </div>
+          <div class="col-md-6 mb-4">
+            <img
+              src="assets/images/project2.png"
+              alt="Project Image"
+              class="img-fluid rounded mb-3"
+            />
+            <h5>
+              Project 2 adalah program membuat storage untuk GSC, program ini
+              agar mempermudah dalam proses transaksi yang dilakukan.
+            </h5>
+          </div>
+
+          <div class="col-12">
+            <div
+              class="swiper swiperPorto"
+              style="max-width: 1000px; margin: 0 auto; padding: 0 40px"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="assets/images/project1.png"
+                    alt="Project Image"
+                    class="img-fluid rounded mb-3"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/images/project2.png"
+                    alt="Project Image"
+                    class="img-fluid rounded mb-3"
+                  />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END PORTOFOLIO -->
+    <!--contact -->
+    <section id="contact" class="bg-light py-5">
+      <div class="container" style="max-width: 800px">
+        <div class="row">
+          <div class="col-12 text-center mb-3">
+            <div style="max-width: 700px" class="m-auto">
+              <h2 class="title section-title contact" id="contact">Contact Me</h2>
+              <p style="color: #0f172a">
+                Jika Anda tertarik untuk bekerja sama atau memiliki pertanyaan
+                lebih lanjut, jangan ragu untuk menghubungi saya melalui email
+                di bawah ini. Saya akan dengan senang hati merespons setiap
+                pesan yang saya terima.
+              </p>
+              <div class="container contactMe" style="max-width: 800px">
+                <div class="row justify-content-center g-4">
+                  <!-- Instagram -->
+                  <div class="col-4 col-md-3">
+                    <a
+                      href="https://www.instagram.com/argi.tsatya"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="social-icon-wrapper d-inline-block text-decoration-none"
+                    >
+                      <img
+                        src="https://cdn-icons-png.flaticon.com/512/174/174855.png"
+                        alt="Instagram"
+                        class="img-fluid social-icon"
+                      />
+                      <p class="mt-2 small text-secondary">Instagram</p>
+                    </a>
+                  </div>
+
+                  <!-- WhatsApp -->
+                  <div class="col-4 col-md-3">
+                    <a
+                      href="https://wa.me/6295365558718"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="social-icon-wrapper d-inline-block text-decoration-none"
+                    >
+                      <img
+                        src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+                        alt="WhatsApp"
+                        class="img-fluid social-icon"
+                      />
+                      <p class="mt-2 small text-secondary">WhatsApp</p>
+                    </a>
+                  </div>
+
+                  <!-- Gmail -->
+                  <div class="col-4 col-md-3">
+                    <a
+                      href="mailto:adianggitarya@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="social-icon-wrapper d-inline-block text-decoration-none"
+                    >
+                      <img
+                        src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
+                        alt="Gmail"
+                        class="img-fluid social-icon"
+                      />
+                      <p class="mt-2 small text-secondary">Gmail</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END CONTACT -->
+    <!-- footer -->
+    <section class="bg-dark text-white text-center py-4">
+      <div class="container">
+        <p class="mb-0">&copy; 2024 Adi Febrianto. All rights reserved.</p>
+      </div>
+    </section>
+    <!-- end footer -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="hireMeModal"
+      tabindex="-1"
+      aria-labelledby="hireMeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="hireMeModalLabel">
+              Contact Freelance
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <form>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama client</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label"
+                  >Pesan untuk Freelance</label
+                >
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="3"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-tomato">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- end modal hire me -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      new Swiper(".swiperPorto", {
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        slidesPerView: 1,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        // breakpoints: {
+        //   768: {
+        //     slidesPerView: 2,
+        //     spaceBetween: 30,
+        //   },
+        //   992: {
+        //     slidesPerView: 3,
+        //     spaceBetween: 30,
+        //   },
+      });
+    </script>
+  </body>
+</html>

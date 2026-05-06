@@ -1,0 +1,226 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  /* background: #f4f7fb;
+  color: #1f2937; */
+  background-color: #0f172a; /* Warna dark mode yang lebih elegan */
+  color: #f8fafc;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: tomato;
+  transition: 0.5s ease-in-out;
+}
+
+.nav-logo {
+  width: 72px;
+  border-radius: 12px;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+.title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.text-gradient,
+.text-gradient-2 {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.05;
+}
+
+.text-gradient {
+  background: linear-gradient(45deg, #ff6b6b, aqua);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-2 {
+  background: linear-gradient(45deg, aqua, orange);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.poto-profil {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+}
+
+.btn-tomato {
+  background-color: tomato;
+  border-color: tomato;
+  color: #fff;
+}
+/* .container .contactMe {
+  background-color: tomato;
+  border-color: tomato;
+  color: #fff;
+} */
+
+.btn-tomato:hover,
+.btn-tomato:focus {
+  border-color: #e14f4f;
+  background-color: #e14f4f;
+  color: #fff;
+}
+
+/* Logic Utama: Hover Filter */
+.social-icon-wrapper {
+  transition: transform 0.3s ease;
+}
+
+.social-icon {
+  max-width: 60px; /* Ukuran yang pas untuk desktop & mobile */
+  filter: grayscale(100%) brightness(0.8); /* Standar: Hitam Putih & Redup */
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Saat wrapper atau link di-hover */
+.social-icon-wrapper:hover .social-icon {
+  filter: grayscale(0%) brightness(1.1); /* Kembalikan warna asli */
+  transform: scale(1.15); /* Efek zoom tipis */
+}
+
+.social-icon-wrapper:hover {
+  transform: translateY(-8px); /* Angkat sedikit ke atas */
+}
+.card,
+.service-card,
+.portfolio-card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.card-text {
+  color: #6b7280;
+}
+
+.service-card {
+  padding: 24px;
+  text-align: center;
+  background: #fff;
+}
+
+.service-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  margin-bottom: 0.75rem;
+}
+
+.swiper-wrapper img {
+  max-width: 100%;
+}
+
+.bg-light {
+  background-color: #f8fafc !important;
+}
+
+.about,
+.MySkill,.SoftSkills,
+.portofolio,
+.service,
+.contact {
+  text-transform: uppercase;
+}
+
+@media (max-width: 992px) {
+  .text-gradient,
+  .text-gradient-2 {
+    font-size: 2.6rem;
+  }
+
+  .poto-profil {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 3rem 0;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .text-gradient,
+  .text-gradient-2 {
+    font-size: 2.2rem;
+  }
+
+  .service-card {
+    padding: 18px;
+  }
+
+  .btn-tomato,
+  .btn-primary,
+  .btn-outline-primary {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .nav-logo {
+    width: 56px;
+  }
+
+  .text-gradient,
+  .text-gradient-2 {
+    font-size: 2rem;
+  }
+
+  .poto-profil {
+    max-width: 240px;
+  }
+
+  .card-body {
+    padding: 1.5rem;
+  }
+}
